@@ -1,0 +1,25 @@
+.image {
+    filter: grayscale(100%);
+    border-radius: 10%;
+}
+
+.welcomeContainer {
+    text-shadow: 2px 2px 4px rgb(71, 71, 71);
+}
+
+.welcome {
+    font-weight: bolder;
+    font-size: 96px;
+}
+
+.nameContainer {
+    text-shadow: 1px 1px 2px rgb(71, 71, 71);
+}
+
+.info1Container {
+    text-shadow: 1px 1px 2px rgb(71, 71, 71);
+}
+
+.info2Container {    
+    text-shadow: 1px 1px 2px rgb(71, 71, 71);
+}

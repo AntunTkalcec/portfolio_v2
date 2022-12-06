@@ -1,0 +1,33 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+a {
+  font-size: xx-large;
+  margin: 0px 20px 0px 20px;
+  transition: transform .3s;
+}
+
+i {
+  margin-right: 3px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  transform: scale(1.3);
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
