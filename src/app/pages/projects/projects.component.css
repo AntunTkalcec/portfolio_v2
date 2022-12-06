@@ -1,4 +1,36 @@
-img {
-    height: 100px;
-    width: 100px;
+a {
+    color: white;
+}
+
+.image {
+    max-width: 30%;
+    max-height: 30%;
+    margin-top: 3rem;
+}
+
+.descHelperContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+}
+.projectTitle {
+    font-weight: bolder;
+    color: white;
+    margin: 10px;
+    font-size: xx-large;
+}
+
+.projectDescription {
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    margin: 10px;
+    flex: 100%;
+}
+
+.helper {
+    color: white;
+    font-weight: bold;
+    flex: 100%;
+    align-self: end;
 }

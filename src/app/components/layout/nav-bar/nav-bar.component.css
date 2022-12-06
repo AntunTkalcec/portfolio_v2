@@ -8,6 +8,10 @@ a {
   transition: transform .3s;
 }
 
+a i {
+  scale: 1 !important;
+}
+
 i {
   margin-right: 3px;
 }
@@ -31,3 +35,14 @@ a:active {
   color: white;
 }
 
+.navbar {
+  background: linear-gradient(45deg, #673ab7, #d9048e);
+}
+
+.name {
+  color: white;
+}
+
+.menuIcon {
+  color: white;
+}

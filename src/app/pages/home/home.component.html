@@ -1,4 +1,4 @@
-<div class="row text-center align-items-center h-100">
+<div class="row text-center align-items-center h-100 mainDiv">
   <div class="col col-sm-12 col-lg-6">
 
     <div class="welcomeContainer fs-1 lh-base">
@@ -20,10 +20,46 @@
       <a>work experience</a>.
     </div>
 
+    <div class="mt-5 hvr-icon-wobble-horizontal hvr-grow projectBtnDiv">
+      <div class="projectBtn" type="button" (click)="goToProjects()">
+        My projects
+        <i class="fa-solid fa-angle-right ms-1 hvr-icon"></i>
+      </div>
+    </div>
+
   </div>
 
   <div class="col col-sm-12 col-lg-6">
-    <img src="assets/images/Me.png" class="image">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/Me.png" class="image img-responsive" alt="me">
+        </div>
+        <div class="flip-card-back">
+          <div class="row h-50 text-center align-items-end">
+            <div class="col">
+              <a href="https://www.linkedin.com/in/antuntkalcec">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://github.com/AntunTkalcec">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row h-50 text-center align-items-top fw-bold text-white">
+            <div class="col mt-1">
+              My LinkedIn profile
+            </div>
+            <div class="col mt-1">
+              My GitHub profile
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>

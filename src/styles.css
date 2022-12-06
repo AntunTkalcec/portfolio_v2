@@ -7,3 +7,115 @@ body { margin: 0; }
     font-family: 'NotoSerifBalinese';
     src: url('assets/fonts/NotoSerifBalinese-Regular.ttf');
 }
+
+@media (max-width: 991px) {
+    .projectBtnDiv {
+        margin-bottom: 25px !important;
+    }
+
+    .flip-card {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .flip-card {
+        width: 400px !important;
+        height: 500px !important;
+    }
+
+    .image {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .flip-card {
+        width: 350px !important;
+        height: 450px !important;
+    }
+
+    .image {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .flip-card {
+        width: 290px !important;
+        height: 390px !important;
+    }
+
+    .image {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 456px;
+    height: 548px;
+    perspective: 1000px;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px #673ab7;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.flip-card-front {
+    background-image: linear-gradient(45deg, #673ab7, #d9048e);
+}
+
+.flip-card-front img {
+    border-radius: 10%;
+}
+
+.flip-card-back {
+    background-image: linear-gradient(45deg, #673ab7, #d9048e);
+    transform: rotateY(180deg);
+}
+
+a {
+    z-index: 999;
+    color: white;
+}
+
+a i {
+    scale: 2;
+}
