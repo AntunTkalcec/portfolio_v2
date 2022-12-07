@@ -1,73 +1,35 @@
-<!-- <main>
-    <div class="row text-center">
-        <p class="fs-1 fw-bold">
-            Here are some projects I've worked on so far.
-            <br>
-            Take a look at my CV to see my work experience.
-        </p>
-    </div>
-
-    <div class="row">
-        <div class="col m-5">
-            <div class="card mx-auto">
-                <div class="row g-0">
-                    <div class="col-md-4 text-center">
-                      <img src="assets/images/QueenDrinksAloneIcon.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-</main> -->
-
-<div class="row text-center align-items-center mt-5">
+<div *ngFor="let project of projects" class="row text-center align-items-center mt-5 mb-5">
   <div class="col col-sm-12 col-lg-12">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="assets/images/QueenDrinksAloneIcon.png" class="image img" alt="image">
-          <div class="projectTitle">
-            QUEEN DRINKS ALONE
-          </div>
+          <img *ngIf="project.imgLink" [src]="project.imgLink" class="image img" alt="image" />
+          <div class="projectTitle">{{project.title}}</div>
           <div class="descHelperContainer">
             <div class="projectDescription">
-              'Queen Drinks Alone' is a mobile project I worked on during February of 2022.
-              It was created using Xamarin.Forms, using best-practice patterns such as MVVM.
-              The app is available on the Google Play Store!
+              {{project.description}}
             </div>
             <div class="helper">
-              <i class="fa-solid fa-angles-right" style="scale: 2.5;"></i>
+              <i class="fa-solid fa-angles-right" style="scale: 2.5"></i>
             </div>
           </div>
-
         </div>
         <div class="flip-card-back">
           <div class="row h-50 text-center align-items-end">
-            <div class="col">
-              <a href="https://www.linkedin.com/in/antuntkalcec">
-                <i class="fa-brands fa-linkedin"></i>
+            <div *ngIf="project.playStoreLink" class="col">
+              <a [href]="project.playStoreLink">
+                <i class="fa-brands fa-google-play"></i>
               </a>
             </div>
             <div class="col">
-              <a href="https://github.com/AntunTkalcec">
+              <a [href]="project.gitHubLink">
                 <i class="fa-brands fa-github"></i>
               </a>
             </div>
           </div>
           <div class="row h-50 text-center align-items-top fw-bold text-white">
-            <div class="col mt-1">
-              My LinkedIn profile
-            </div>
-            <div class="col mt-1">
-              My GitHub profile
-            </div>
+            <div *ngIf="project.playStoreLink" class="col mt-1">Find the app on the Play Store</div>
+            <div class="col mt-1">Find the app code on GitHub</div>
           </div>
         </div>
       </div>

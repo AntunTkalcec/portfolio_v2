@@ -15,6 +15,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { CvComponent } from './pages/cv/cv.component';
+import { ProjectsService } from './services/projects.service';
 
 @NgModule({
   declarations: [
