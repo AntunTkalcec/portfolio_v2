@@ -1,9 +1,10 @@
-<div *ngFor="let project of projects" class="row text-center align-items-center mt-5 mb-5">
+<div *ngFor="let project of projects" class="row text-start align-items-start mt-5 mb-5 appear">
   <div class="col col-sm-12 col-lg-12">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img *ngIf="project.imgLink" [src]="project.imgLink" class="image img" alt="image" />
+          <img *ngIf="project.imgLink && project.imgClass" [src]="project.imgLink" class="image img" alt="image" [ngClass]="project.imgClass"/>
+          <img *ngIf="project.imgLink && !project.imgClass" [src]="project.imgLink" class="image img" alt="image"/>
           <div class="projectTitle">{{project.title}}</div>
           <div class="descHelperContainer">
             <div class="projectDescription">

@@ -46,3 +46,9 @@ a:active {
 .menuIcon {
   color: white;
 }
+
+@media (max-width: 345px) {
+  a {
+    margin: 0px 5px 0px 5px !important;
+  }
+}

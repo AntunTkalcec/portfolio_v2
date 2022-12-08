@@ -20,7 +20,7 @@ body { margin: 0; }
 
 @media (max-width: 425px) {
     .flip-card {
-        width: 400px !important;
+        width: 375px !important;
         height: 500px !important;
     }
 
@@ -61,6 +61,15 @@ body { margin: 0; }
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0%);
+    }
+    100% {
+        transform: scale(100%);
     }
 }
 

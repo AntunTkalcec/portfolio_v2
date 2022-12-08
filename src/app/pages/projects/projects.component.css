@@ -8,6 +8,26 @@ a {
     margin-top: 3rem;
 }
 
+.warehomeImg {
+    /* width: 250px;
+    height: 50px; */
+    scale: 1.5;
+}
+
+@media (max-width: 425px) {
+    .image {
+        max-width: 20%;
+        max-height: 20%;
+        margin-top: 2rem;
+    }
+    .warehomeImg {
+        max-width: 100% !important;
+        width: 200px !important;
+        height: 50px !important;
+        scale: 1;
+    }
+}
+
 .descHelperContainer {
     display: flex;
     flex-wrap: wrap;
@@ -34,3 +54,11 @@ a {
     flex: 100%;
     align-self: end;
 }
+
+.appear {
+    animation: 1s ease-out 0s 1 appear;
+}
+
+/* .flip-card {
+    margin-left: 5% !important;
+} */

@@ -4,5 +4,6 @@ export interface Project {
     isOnPlayStore: boolean,
     playStoreLink?: string,
     gitHubLink: string,
-    imgLink?: string
+    imgLink?: string,
+    imgClass?: string,
 }
