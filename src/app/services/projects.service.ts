@@ -17,11 +17,18 @@ export class ProjectsService {
     },
     {
       title: 'WareHome',
-      description: 'WareHome was a university Windows.Forms project, working on which provided me with some experience in documenting a software product. Also, it is where I became interested in object-oriented programming!',
+      description: 'WareHome was a university Windows.Forms project that provided me with some experience in documenting a software product. Also, its where I became interested in object-oriented programming!',
       gitHubLink: 'https://github.com/foivz/pi21-atkalcec-khabdija-kstrucic',
       isOnPlayStore: false,
-      imgLink: 'https://raw.githubusercontent.com/foivz/pi21-atkalcec-khabdija-kstrucic/master/Documentation/Logo.png?token=GHSAT0AAAAAAB4EQGWUMOKEVK67OK4VBC5OY4RUMHA',
+      imgLink: 'assets/images/warehome.png',
       imgClass: 'warehomeImg'
+    },
+    {
+      title: '',
+      description: '',
+      gitHubLink: '',
+      isOnPlayStore: false,
+      imgLink: '',
     }
   ];
 

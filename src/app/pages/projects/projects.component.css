@@ -59,6 +59,19 @@ a {
     animation: 1s ease-out 0s 1 appear;
 }
 
-/* .flip-card {
-    margin-left: 5% !important;
-} */
+@media (max-width: 400px) {
+    .projectTitle {
+        font-size: large !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .projectDescription {
+        font-size: medium !important;
+    }
+}
+@media (max-width: 315px) {
+    .projectDescription {
+        font-size: small !important;
+    }
+}
