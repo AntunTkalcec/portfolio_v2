@@ -15,7 +15,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { CvComponent } from './pages/cv/cv.component';
-import { ProjectsService } from './services/projects.service';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { ProjectsService } from './services/projects.service';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    MatMenuModule
+    MatMenuModule,
+    NgxExtendedPdfViewerModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

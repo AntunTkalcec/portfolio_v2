@@ -1,39 +1,45 @@
-<div *ngFor="let project of projects" class="row text-start align-items-start mt-5 mb-5 appear">
-  <div class="col col-sm-12 col-lg-12">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img *ngIf="project.imgLink && project.imgClass" [src]="project.imgLink" class="image img" alt="image" [ngClass]="project.imgClass"/>
-          <img *ngIf="project.imgLink && !project.imgClass" [src]="project.imgLink" class="image img" alt="image"/>
-          <div class="projectTitle">{{project.title}}</div>
-          <div class="descHelperContainer">
-            <div class="projectDescription">
-              {{project.description}}
-            </div>
-            <div class="helper">
-              <i class="fa-solid fa-angles-right" style="scale: 2.5"></i>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="row h-50 text-center align-items-end">
-            <div *ngIf="project.playStoreLink" class="col">
-              <a [href]="project.playStoreLink">
-                <i class="fa-brands fa-google-play"></i>
-              </a>
-            </div>
-            <div class="col">
-              <a [href]="project.gitHubLink">
-                <i class="fa-brands fa-github"></i>
-              </a>
+<div>
+  <div *ngFor="let project of projects" class="row text-start align-items-start mt-5 mb-5 appear">
+    <div class="col col-sm-12 col-lg-12">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img *ngIf="project.imgLink && project.imgClass" [src]="project.imgLink" class="image img" alt="image"
+              [ngClass]="project.imgClass" />
+            <img *ngIf="project.imgLink && !project.imgClass" [src]="project.imgLink" class="image img" alt="image" />
+            <div class="projectTitle">{{project.title}}</div>
+            <div class="descHelperContainer">
+              <div class="projectDescription">
+                {{project.description}}
+              </div>
+              <div class="helper">
+                <i class="fa-solid fa-angles-right" style="scale: 2.5"></i>
+              </div>
             </div>
           </div>
-          <div class="row h-50 text-center align-items-top fw-bold text-white">
-            <div *ngIf="project.playStoreLink" class="col mt-1">Find the app on the Play Store</div>
-            <div class="col mt-1">Find the app code on GitHub</div>
+          <div class="flip-card-back">
+            <div class="row h-50 text-center align-items-end">
+              <div *ngIf="project.playStoreLink" class="col">
+                <a [href]="project.playStoreLink">
+                  <i class="fa-brands fa-google-play"></i>
+                </a>
+              </div>
+              <div class="col">
+                <a [href]="project.gitHubLink">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row h-50 text-center align-items-top fw-bold text-white">
+              <div *ngIf="project.playStoreLink" class="col mt-1">Find the app on the Play Store</div>
+              <div class="col mt-1">Find the app code on GitHub</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="mb-5 fw-bold text-center">
+    There's more 'less noteworthy' projects I've worked on, so check out my GitHub! :)
   </div>
 </div>
