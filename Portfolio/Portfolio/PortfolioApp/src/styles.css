@@ -1,137 +1,142 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
 
 @font-face {
-    font-family: 'NotoSerifBalinese';
-    src: url('assets/fonts/NotoSerifBalinese-Regular.ttf');
+  font-family: "NotoSerifBalinese";
+  src: url("assets/fonts/NotoSerifBalinese-Regular.ttf");
 }
 
 @media (max-width: 991px) {
-    .projectBtnDiv {
-        margin-bottom: 25px !important;
-    }
+  .projectBtnDiv {
+    margin-bottom: 25px !important;
+  }
 
-    .flip-card {
-        margin-bottom: 25px;
-    }
+  .flip-card {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 480px) {
-    .flip-card {
-        width: 375px !important;
-        height: 500px !important;
-    }
+  .flip-card {
+    width: 375px !important;
+    height: 500px !important;
+  }
 
-    .image {
-        width: 100% !important;
-        height: 100% !important;
-    }
+  .image {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 400px) {
-    .flip-card {
-        width: 350px !important;
-        height: 450px !important;
-    }
+  .flip-card {
+    width: 350px !important;
+    height: 450px !important;
+  }
 
-    .image {
-        width: 100% !important;
-        height: 100% !important;
-    }
+  .image {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 375px) {
-    .flip-card {
-        width: 290px !important;
-        height: 390px !important;
-    }
+  .flip-card {
+    width: 290px !important;
+    height: 390px !important;
+  }
 
-    .image {
-        width: 100% !important;
-        height: 100% !important;
-    }
+  .image {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 315px) {
-    .flip-card {
-        width: 250px !important;
-        height: 330px !important;
-    }
+  .flip-card {
+    width: 250px !important;
+    height: 330px !important;
+  }
 }
 
 @keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes appear {
-    0% {
-        transform: scale(0%);
-    }
-    100% {
-        transform: scale(100%);
-    }
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
 }
 
 .flip-card {
-    background-color: transparent;
-    width: 456px;
-    height: 548px;
-    perspective: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: transparent;
+  width: 456px;
+  height: 548px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 5px 5px 10px #673ab7;
-    border-radius: 10%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 5px 5px 10px #673ab7;
+  border-radius: 10%;
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-card-front,
 .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 10%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10%;
 }
 
 .flip-card-front {
-    background-image: linear-gradient(45deg, #673ab7, #d9048e);
+  background-image: linear-gradient(45deg, #673ab7, #d9048e);
 }
 
 .flip-card-front img {
-    border-radius: 10%;
+  border-radius: 10%;
 }
 
 .flip-card-back {
-    background-image: linear-gradient(45deg, #673ab7, #d9048e);
-    transform: rotateY(180deg);
+  background-image: linear-gradient(45deg, #673ab7, #d9048e);
+  transform: rotateY(180deg);
 }
 
 a {
-    z-index: 999;
-    color: white;
+  z-index: 999;
+  color: white;
 }
 
 a i {
-    scale: 2;
+  scale: 2;
 }
