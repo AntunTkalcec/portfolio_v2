@@ -46,7 +46,7 @@ export class ProjectsService {
     {
       title: 'WareHome',
       description: 'WareHome was a university Windows.Forms project that provided me with some experience in documenting a software product. Also, its where I became interested in object-oriented programming!',
-      gitHubLink: 'https://github.com/foivz/pi21-atkalcec-khabdija-kstrucic',
+      gitHubLink: 'https://github.com/AntunTkalcec/WareHomeOriginal',
       isOnPlayStore: false,
       imgLink: 'assets/images/warehome.png',
       imgClass: 'warehomeImg'
