@@ -1,65 +1,77 @@
-<div class="row text-center align-items-center h-100 mainDiv">
-  <div class="col col-sm-12 col-lg-6 p-4">
-
-    <div class="welcomeContainer fs-1 lh-base">
-      WELCOME
+<section #homeSection class="home hidden" id="home">
+  <div class="home-content">
+    <h1>Hi, I'm <span>Antun Tkalčec</span></h1>
+    <div class="text-animate">
+      <h3>Fullstack Developer</h3>
     </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos placeat
+      quasi impedit dolorem. Ipsa libero corrupti doloribus, eius dicta tempora
+      quis ut ratione iste. Nihil, quis?
+    </p>
 
-    <div class="nameContainer fs-2 lh-base">
-      My name is Antun.
+    <div class="btn-box">
+      <a href="#" class="btn">Hire me</a>
+      <a href="#" class="btn">Let's talk</a>
     </div>
-
-    <div class="info1Container fs-3 lh-base">
-      I'm a Master's degree student at FOI, Croatia, and a Fullstack Software Developer with a passion for mobile and 
-      web app development.
-    </div>
-
-    <div class="info2Container fs-4 lh-base">
-      This simple website should give you some insight into my interests, hobbies, education,
-      projects and
-      <a>work experience</a>.
-    </div>
-
-    <div class="mt-5 hvr-icon-wobble-horizontal hvr-grow projectBtnDiv">
-      <div class="projectBtn" type="button" (click)="goToProjects()">
-        My projects
-        <i class="fa-solid fa-angle-right ms-1 hvr-icon"></i>
-      </div>
-    </div>
-
   </div>
 
-  <div class="col col-sm-12 col-lg-6">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets/images/Me.png" class="image img-responsive" alt="me">
-        </div>
-        <div class="flip-card-back">
-          <div class="row h-50 text-center align-items-end">
-            <div class="col">
-              <a href="https://www.linkedin.com/in/antuntkalcec">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-            <div class="col">
-              <a href="https://github.com/AntunTkalcec">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row h-50 text-center align-items-top fw-bold text-white">
-            <div class="col mt-1">
-              My LinkedIn profile
-            </div>
-            <div class="col mt-1">
-              My GitHub profile
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="home-sci">
+    <a href="https://github.com/AntunTkalcec"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/antuntkalcec"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://wellfound.com/u/antun-tkalcec"><i class="fa-solid fa-globe"></i></a>
+  </div>
+</section>
 
+
+<section #aboutSection class="about hidden" id="about">
+  <h2 class="heading">About <span>Me</span></h2>
+
+  <div class="about-img">
+    <img src="/assets/images/Me.png" alt="Me">
   </div>
 
-</div>
+  <div class="about-content">
+    <h3>Fullstack Software Developer</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, consequatur modi inventore facere explicabo odit
+      neque perferendis laudantium, recusandae voluptatum accusantium iure, cupiditate officiis ex vitae nemo laboriosam
+      magni illum. Omnis necessitatibus alias voluptate libero illo veniam, magnam nostrum quo ut atque asperiores.
+      Tempore reprehenderit doloremque debitis doloribus, laboriosam animi?</p>
+
+    <div class="btn-box btns">
+      <a href="#" class="btn">Read more</a>
+    </div>
+  </div>
+</section>
+
+<section #projectsSection class="projects hidden" id="projects">
+  <h2 class="heading">My <span>projects</span></h2>
+
+  <div class="projects-row">
+    <div *ngFor="let project of projects" class="projects-column hidden">
+
+      <h3 class="title">{{project.title}}</h3>
+
+      <p>{{project.description}}</p>
+
+      <div class="btn-container">
+        <a *ngIf="project.playStoreLink" [href]="project.playStoreLink" class="btn hvr-grow"><i
+            class="fa-brands fa-google-play"></i></a>
+        <a [href]="project.gitHubLink" class="btn hvr-grow"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <h5 class="smallheading">Make sure to check out my GitHub profile to see what else I've worked on.</h5>
+</section>
+
+<section #contactSection class="contact hidden" id="contact">
+  <h2 class="heading">Contact <span>me!</span></h2>
+
+  <div class="contact-container">
+    <h5><span>Email: </span><a href="mailto:antuntkalcec@protonmail.com" class="a">antuntkalcec@protonmail.com</a></h5>
+    <h5><span>Phone: </span><br>+385 91 786 4625</h5>
+    <h5><span>LinkedIn: </span><br><a href="https://www.linkedin.com/in/antuntkalcec" class="link"><i class="fa-brands fa-linkedin"></i></a></h5>
+  </div>
+</section>

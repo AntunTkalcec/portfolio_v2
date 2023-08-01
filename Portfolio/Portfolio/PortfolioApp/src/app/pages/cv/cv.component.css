@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  max-width: 75%;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}

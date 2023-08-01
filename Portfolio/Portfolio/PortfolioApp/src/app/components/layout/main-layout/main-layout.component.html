@@ -1,9 +1,4 @@
 <app-nav-bar></app-nav-bar>
-<div class="container-fluid">
-    <div class="row h-100">
-        <router-outlet style="display: none;"></router-outlet>        
-    </div>
-    <div (click)="scrollToTop()" class="scroll-to-top hvr-grow fs-3 text-center text-white" *ngIf="pageYoffset > 0">
-        <i class="fa-solid fa-arrow-up mt-3"></i>
-    </div>
+<div>
+    <router-outlet></router-outlet>
 </div>

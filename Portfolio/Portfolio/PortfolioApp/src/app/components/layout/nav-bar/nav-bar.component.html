@@ -1,20 +1,13 @@
-<mat-toolbar class="navbar">
-    <button mat-icon-button class="menuIcon" [matMenuTriggerFor]="menu">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="goToHome()"><i class="fa-solid fa-house"></i>Home</button>
-        <button mat-menu-item (click)="goToProjects()"><i class="fa-solid fa-list-check"></i>Projects</button>
-        <button mat-menu-item (click)="goToCV()"><i class="fa-solid fa-file"></i>CV</button>
-    </mat-menu>
-    <span class="name">Antun Tkalčec</span>
-    <span class="example-spacer"></span>
-    <a href="https://www.linkedin.com/in/antuntkalcec" matTooltip="My LinkedIn" [matTooltipShowDelay]="1200"
-        [matTooltipHideDelay]="300">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/AntunTkalcec" matTooltip="My GitHub" [matTooltipShowDelay]="1200"
-        [matTooltipHideDelay]="300">
-        <i class="fa-brands fa-github"></i>
-    </a>
-</mat-toolbar>
+<header class="header">
+    <a href (click)="scrollToSection('homeSection', $event)" class="logo active" id="home">Antun.</a>
+
+    <div class="fa-solid fa-bars" id="menu-icon"></div>
+    <nav class="navbar">
+        <a href (click)="scrollToSection('aboutSection', $event)" id="about">About me</a>
+        <a href (click)="scrollToSection('projectsSection', $event)" id="projects">My projects</a>
+        <a href (click)="scrollToSection('contactSection', $event)" id="contact">Contact</a>
+        <a routerLink="/cv">My CV</a>
+
+        <span class="active-nav"></span>
+    </nav>
+</header>

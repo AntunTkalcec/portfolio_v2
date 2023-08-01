@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScrollService } from 'src/app/services/scroll.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,20 +9,17 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private scrollService: ScrollService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  goToProjects() {
-    this.router.navigate(['projects']);
+  scrollToSection(sectionId: string, event: Event) {
+    event.preventDefault();
+    this.scrollService.scrollToSection(sectionId);
   }
 
   goToCV() {
-    this.router.navigate(['cv']);
-  }
-
-  goToHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(["cv"]);
   }
 }
