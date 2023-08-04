@@ -5,13 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainLayoutComponent } from './components/layout/main-layout/main-layout.component';
 import { NavBarComponent } from './components/layout/nav-bar/nav-bar.component';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './pages/home/home.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatMenuModule } from '@angular/material/menu';
 import { CvComponent } from './pages/cv/cv.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
@@ -27,12 +21,6 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatGridListModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTooltipModule,
-    MatMenuModule,
     NgxExtendedPdfViewerModule    
   ],
   providers: [],

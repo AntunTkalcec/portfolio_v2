@@ -34,3 +34,15 @@ a::after {
 a:hover::after {
   transform: scaleX(1);
 }
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    min-width: 100%;
+  }
+}

@@ -81,7 +81,7 @@ body {
 }
 
 section {
-  min-height: 100vh !important;
+  min-height: 101vh !important;
   padding: 10rem 9% 2rem;
 }
 
@@ -293,15 +293,6 @@ span {
   margin: 2rem 0 3rem;
 }
 
-.btn-box.btns {
-  display: inline-block;
-  width: 15rem;
-}
-
-.btn-box.btns a::before {
-  background: var(--second-bg-color);
-}
-
 .projects {
   display: flex;
   justify-content: center;
@@ -361,6 +352,7 @@ span {
 
 .smallheading {
   padding-top: 2rem;
+  text-align: center;
 }
 
 .cv {
@@ -412,6 +404,30 @@ span {
   transform: scaleX(1);
 }
 
+.projects .a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  padding: 1%;
+}
+
+.projects .a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.projects .a:hover::after {
+  transform: scaleX(1);
+}
+
 .link {
   position: relative;
   display: inline-flex;
@@ -451,13 +467,17 @@ span {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 75%;
   }
 }
 
 @media (max-width: 991px) {
   .header {
     padding: 2rem 4%;
+  }
+
+  html {
+    font-size: 55%;
   }
 
   section {

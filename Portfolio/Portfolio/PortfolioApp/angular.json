@@ -28,8 +28,7 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/css/hover.css"
+              "src/styles.css"
             ],
             "scripts": [
             ]

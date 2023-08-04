@@ -61,6 +61,11 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  scrollToContact(event: Event) {
+    event.preventDefault();
+    this.contactSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
   ngAfterViewInit() {
     this.sections = document.querySelectorAll('section');
     this.navLinks = document.querySelectorAll('header nav a');
